@@ -1,0 +1,234 @@
+
+Create a responsive webpage to organize community iftar dinners during Ramadan (March 1–30, 2025).  Day of the week starts monday. Users can sign up to host or attend iftar dinners, with a calendar interface showing daily availability and reservations.
+Core Features:
+1. Interactive Calendar
+Display all 30 days of Ramadan in a grid layout (March 1–30, 2025).
+Highlight reserved dates with the host’s name, guest count, and notes (if provided).
+Allow clicks only on available dates to trigger sign-ups.
+2. Single-Signup Enforcement
+Only one host per date allowed (dates become unclickable once reserved).
+Show a warning if a user tries to sign up for an occupied date.
+Prevent duplicate emails from registering for multiple dates.
+3. User Sign-Up Form
+Fields:
+Name (required)
+Email (not required, validated format)
+Phone number (required)
+Role dropdown (Hosting/Attending)
+Number of guests 
+
+Validation:
+Show error/success messages with color-coded alerts.
+Blockinvalid emails.
+4. Reservation Visibility
+Display reserved dates with:
+Host’s name
+Guest count
+Brief preview of notes (full details on hover/click)
+Use visual cues (colors/icons) to differentiate reserved vs. open dates.
+5. Admin Management Panel
+View all reservations with details (name, email, guests, notes).
+Delete reservations (with confirmation prompt).
+Export data to CSV.
+Accessible via a protected section (no backend required—use a simple password prompt).
+6. User Feedback
+Success confirmation after sign-up (“Registration confirmed! A confirmation email has been sent.”).
+Error messages for invalid/duplicate entries.
+2. **Prompt Text for Islamic Ramadan-Themed Background Design:**  
+3. 
+4. **Theme:**  
+5. Create a serene, spiritually uplifting background design that embodies the essence of Ramadan and Islamic aesthetics, featuring mosques, Islamic patterns, and light, calming colors.  
+6. 
+7. **Visual Elements:**  
+8. 1. **Color Palette:**  
+9.    - **Primary**: Soft twilight hues (pale sky blue, lavender, dove gray) transitioning to warm, light gold accents.  
+10.    - **Secondary**: Muted greens (symbolizing renewal) and pearl white for contrast.  
+11.    - **Avoid** dark or overly saturated colors—keep tones airy and peaceful.  
+12. 
+13. 2. **Central Motifs:**  
+14.    - A **mosque silhouette** with intricate domes and minarets, rendered in semi-transparent white or gold.  
+15.    - Delicate **crescent moons** and **stars** scattered subtly.  
+16.    - **Islamic geometric patterns** (e.g., tessellations, arabesques) as faint overlays.  
+17. 
+18. 3. **Ambiance:**  
+19.    - Evoke the tranquility of **suhoor (pre-dawn)** or **maghrib (sunset)**.  
+20.    - Add soft **gradients** mimicking the sky during Ramadan twilight.  
+21.    - Incorporate faint **lantern glows** or **twinkling star effects** for depth.  
+22. 
+23. 4. **Textures & Details:**  
+24.    - Subtle **watercolor washes** for a dreamy effect.  
+25.    - **Gold foil accents** on patterns or mosque outlines.  
+26.    - **Faint calligraphy** of Ramadan greetings (e.g., "رمضان كريم") in the background.  
+27. 
+28. **Technical Requirements:**  
+29. - **Responsive**: Scales elegantly across screen sizes without losing detail.  
+30. - **Accessibility**: Ensure text contrast for readability (e.g., dark gray text over light backgrounds).  
+31. - **Layering**: Use transparent layers to create depth without visual clutter.  
+32. 
+33. **Inspiration Keywords:**  
+Mosque architecture, Ramadan spirituality, Islamic geometry, dawn light,Auto-close form after successful submission.
+Design Requirements:
+Ramadan Theme:
+ serenity, community, charity (sadaqah).  
+
+---  
+This prompt guides designers to create a light, culturally resonant background that balances Islamic motifs with a modern, minimalist aesthetic. Let me know if you’d like to emphasize specific elements!
+Typography: Arabic-style fonts (e.g., Amiri) for headings.
+Icons: Crescent moon and lantern motifs.
+Mobile Responsive:
+Calendar grid adapts to 2 columns on mobile.
+Form fields stack vertically on smaller screens.
+Accessibility:
+High-contrast text for readability.
+Clear focus states for interactive elements.
+Technical Requirements:
+Use local storage to persist data (no backend needed).
+Ensure form inputs are sanitized to prevent XSS vulnerabilities.
+Include a “Reset Form” button and confirmation for cancellation.
+Optional Add-Ons (if time permits):
+1. Email confirmation simulation (alert-based).
+2. Daily iftar time countdown.
+3. Prayer time display.
+4. Capacity warnings for popular dates.
+Inspiration Reference:
+Form logic and flow from the provided Google Form (phone validation, guest limits, notes field).
+Prioritize simplicity and clarity over complex animations.
+
+
+
+
+090
+
+
+
+
+
+
+
+
+
+
+
+Prompt Text for Ramadan Calander and Iftar at Landås moske.
+Adresse: Erleveien 14-18, Bergen, Norway  tlf : 40606051
+Objective
+Develop a modern, responsive web app for managing community iftar sign-ups during Ramadan (March 1–30, 2025) using React + TypeScript and Tailwind CSS. The app should allow users to reserve dates as hosts/attendees while preventing conflicts and ensuring data integrity.
+
+Technical Requirements
+1. Tech Stack
+React + TypeScript
+Tailwind CSS for styling
+Local storage for data persistence
+Lucide React icons for visual elements
+2. Core Features
+Interactive Calendar Grid
+Display all 30 Ramadan days in a responsive grid (7 columns desktop → 2 columns mobile)
+Highlight reserved dates with:
+Host’s name
+Guest count
+Brief notes preview (tooltip/flyout for full details)
+Show visual feedback for available dates (hover effects, click interactions)
+Smart Sign-Up Form
+Fields:
+Full name (text)
+ Email
+Phone number (with country code support)
+Role dropdown (Hosting/Attending)
+
+Notes/requirements (textarea)
+Validation:
+
+booking =  Hosting
+Prevent date double-booking
+
+  Attending only show nr of  Attendence. 
+
+Auto-close after successful submission
+Data Management
+Store reservations with:
+Date
+User details
+Timestamp
+Role type
+Prevent data loss on refresh (local storage)
+Export to CSV functionality
+3. UI/UX Requirements
+Status System
+Color-coded alerts (green = success, red = error, yellow = warning)
+Auto-dismiss success messages after 2 seconds
+Modal Interface
+Floating form overlay with dark background overlay
+Smooth open/close animations
+Accessibility
+ARIA labels for screen readers
+Keyboard navigation support
+High contrast ratios for text
+4. Design Spec
+5. **Prompt Text for Islamic Ramadan-Themed Background Design:**  
+6. 
+7. **Theme:**  
+8. Create a serene, spiritually uplifting background design that embodies the essence of Ramadan and Islamic aesthetics, featuring mosques, Islamic patterns, and light, calming colors.  
+9. 
+10. **Visual Elements:**  
+11. 1. **Color Palette:**  
+12.    - **Primary**: Soft twilight hues (pale sky blue, lavender, dove gray) transitioning to warm, light gold accents.  
+13.    - **Secondary**: Muted greens (symbolizing renewal) and pearl white for contrast.  
+14.    - **Avoid** dark or overly saturated colors—keep tones airy and peaceful.  
+15. 
+16. 2. **Central Motifs:**  
+17.    - A **mosque silhouette** with intricate domes and minarets, rendered in semi-transparent white or gold.  
+18.    - Delicate **crescent moons** and **stars** scattered subtly.  
+19.    - **Islamic geometric patterns** (e.g., tessellations, arabesques) as faint overlays.  
+20. 
+21. 3. **Ambiance:**  
+22.    - Evoke the tranquility of **suhoor (pre-dawn)** or **maghrib (sunset)**.  
+23.    - Add soft **gradients** mimicking the sky during Ramadan twilight.  
+24.    - Incorporate faint **lantern glows** or **twinkling star effects** for depth.  
+25. 
+26. 4. **Textures & Details:**  
+27.    - Subtle **watercolor washes** for a dreamy effect.  
+28.    - **Gold foil accents** on patterns or mosque outlines.  
+29.    - **Faint calligraphy** of Ramadan greetings (e.g., "رمضان كريم") in the background.  
+30. 
+31. **Technical Requirements:**  
+32. - **Responsive**: Scales elegantly across screen sizes without losing detail.  
+33. - **Accessibility**: Ensure text contrast for readability (e.g., dark gray text over light backgrounds).  
+34. - **Layering**: Use transparent layers to create depth without visual clutter.  
+35. 
+36. **Inspiration Keywords:**  
+37. Mosque architecture, Ramadan spirituality, Islamic geometry, dawn light,
+Responsive Rules:
+Calendar cells stack vertically on mobile
+Form fields adapt to 100% width on small screens
+
+Advanced Features (Optional)
+1. Role-Based Logic
+Show additional fields for hosts (e.g., address, meal types)
+Different guest limits for hosts vs attendees
+2. Confirmation System
+Simulated email confirmation dialog
+PDF ticket generation
+3. Admin Features
+Password-protected management panel
+Bulk delete/export operations
+Date override capability
+4. Integration Hooks
+Prayer time API display
+Iftar countdown timer
+Donation tracking module 
+
+5. add time for Iftar  and Sehar on the calander. Find times from this link > https://www.islamicfinder.org/ramadan-calendar/45309060/bergen-ramadan-calendar/
+Time should be in military time.
+
+
+Quality Assurance
+1. Validation Tests
+Verify all form fields reject invalid inputs
+Confirm duplicate email/date blocking works
+Test mobile/desktop layout consistency
+2. Performance
+Instant calendar rendering (<100ms)
+Smooth form animations
+3. Security
+Sanitize all user inputs
+Prevent XSS vulnerabilities
